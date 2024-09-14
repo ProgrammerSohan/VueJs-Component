@@ -8,6 +8,7 @@
             <h3>Artist</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet autem dolorum magni, neque accusantium deserunt natus at voluptates consequatur obcaecati, dolore molestiae! Aliquam provident architecto sed, esse excepturi rerum?
                 Delectus omnis blanditiis ipsa officiis? Vel optio sed eaque sequi incidunt? Ex amet possimus laborum esse sunt? Laboriosam similique asperiores unde, cumque distinctio sunt, eligendi, dolor ut dicta a nostrum.</p>
+                <myTitle />
                 <UserInfo/>
         </div>
     </div>

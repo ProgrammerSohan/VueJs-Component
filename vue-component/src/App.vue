@@ -1,9 +1,16 @@
 <template>
     <div>
 
-        <CompOne />
-        <UserInfo />
-        <Title />
+      <!--   <CompOne />
+        <UserInfo /> -->
+        <Title :title="page" />
+        <Title :secondTitle="header" />
+        <Title :thirdTitle="third" />
+        <button @click="page='Hello, this is another sohan!!'">Click</button>
+        <button @click="header='ami 2nd title!!'">Click for 2nd title</button>
+        <button @click="third='ami 3rd title!!'">Third</button>
+
+
     </div>
 
 </template>
@@ -14,6 +21,15 @@ import Title from "./components/Title.vue";
 
 export default{
     name: 'App',
+    data(){
+        return {
+            page: "Hello I Vue",
+            header: "this is second title",
+            third: "this is 3rd title",
+
+            
+        }
+    },
     components: {
         CompOne,
         UserInfo,

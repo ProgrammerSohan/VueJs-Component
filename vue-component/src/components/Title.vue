@@ -3,6 +3,7 @@
         <h1>{{title}}</h1>
         <h2>{{secondTitle}}</h2>
         <h2>{{thirdTitle}}</h2>
+       
         <p>global comp</p>
     </div>
 </template>

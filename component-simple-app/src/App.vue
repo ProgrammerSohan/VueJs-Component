@@ -1,40 +1,26 @@
 <template>
-    <div>
-        <!--  <UserInfovalidation name="Sohan" surname="Sujan" age="1296" /> -->
-          <!-- <UserInfovalidation :name="user.name" :surname="user.surname" :age="user.age" /> -->
-           <BooleanBox />
-       
+    <div class="wrapper">
+        <Header />
+        
+        <div class="bottomWrapper">
+             <Content />
+             <Side />
+
+        </div>
     </div>
 
 </template>
 <script>
-import BooleanBox from './components/BooleanBox.vue';
-//import UserInfovalidation from './components/UserInfovalidation.vue';
-
-
-
+import Header from "./components/Header.vue";
+import Content from "./components/Content.vue";
+import Side from "./components/Side.vue";
 
 export default{
     name: 'App',
-    data(){
-        return {
-           // page: "Hello I am Sohan!!",
-             
-           user:{
-                // name: "Bishop",
-                name: 56,
-                surname: "John",
-                age: 55,
-
-           }
-          
-
-            
-        };
-    },
-    components: {
-       // UserInfovalidation,
-        BooleanBox
+       components: {
+        Header,
+        Content,
+        Side
 
     }
 
@@ -43,5 +29,20 @@ export default{
 
 </script>
 <style>
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.wrapper{
+  display:flex;
+  flex-direction: column;
+
+}
+.bottomWrapper{
+    display: flex;
+}
 
 </style>
